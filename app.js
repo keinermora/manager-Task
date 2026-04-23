@@ -13,7 +13,6 @@ app.use(erroresMiddleware);
 
 const authRoutes = require("./routes/auth.routes");
 app.use(authRoutes);
-
 mongoose
   .connect("mongodb://localhost:27017/managertasksdb")
   .then(() => console.log("la base de datos se conecto de manera correcta"))
